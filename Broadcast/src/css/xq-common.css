@@ -1,0 +1,57 @@
+a,
+a:hover {
+  text-decoration: none;
+  tap-highlight-color: rgba(0, 0, 0, 0);
+  outline: none;
+  color: #333;
+}
+button {
+  outline: none;
+  tap-highlight-color: rgba(0, 0, 0, 0);
+}
+input {
+  apearance: none;
+  border-radius: 0;
+  padding: 0;
+  outline: none;
+}
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.pull-left {
+  float: left;
+}
+.pull-right {
+  float: right;
+}
+.relative {
+  position: relative;
+}
+.clearfix {
+  clear: both;
+}
+.clearfix:before,
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  font-size: 0;
+  visibility: hidden;
+  overflow: hidden;
+}
+.border-box {
+  box-sizing: border-box;
+}
+.relative {
+  position: relative;
+}
+.hide {
+  display: none;
+}
