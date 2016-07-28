@@ -72,7 +72,8 @@
 }
 .wrap .top-notice .top-right-nav .ul-nav li {
   float: left;
-  margin: 0 15px;
+  margin: 0 10px;
+  cursor: pointer;
 }
 .wrap .top-notice .top-right-nav .ul-nav.tencent {
   height: 20px;
