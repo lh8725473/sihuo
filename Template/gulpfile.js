@@ -9,7 +9,7 @@ gulp.task('server', function() {
     connect.server({
         name: 'develop',
         root: './',
-        port: 8080,
+        port: 1377,
         livereload: true
     });
 });
@@ -20,10 +20,8 @@ gulp.task('less', function() {
         .pipe(less())
         .pipe(autoprefixer({
             browsers: ['last 2 versions', 'Android >= 4.0'],
-            cascade: true, //是否美化属性值 默认：true 像这样：
-            //-webkit-transform: rotate(45deg);
-            //        transform: rotate(45deg);
-            remove: true //是否去掉不必要的前缀 默认：true 
+            cascade: true,
+            remove: true
         }))
         .pipe(gulp.dest('src/css'))
         .pipe(connect.reload());
@@ -34,7 +32,7 @@ gulp.task('html', function() {
         .pipe(connect.reload());
 })
 
-gulp.task('watch', ['less'], function() {
+gulp.task('watch', function() {
     gulp.watch('src/*.html', ['html']);
     gulp.watch('src/less/*.less', ['less']);
 })
